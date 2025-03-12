@@ -17,6 +17,6 @@ while True:
     except ValueError:
         print("Invalid input! Please enter a valid number.")
 
-numbers.sort()
+numbers.sort(reverse=True)
 for number in numbers:
     print(number)

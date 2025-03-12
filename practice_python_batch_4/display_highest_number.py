@@ -2,12 +2,12 @@
 
 numbers = []
 
-print("type 'l' to display the lowest number")
+print("type 'h' to display the lowest number")
 
 while True:
     user_input = input("Enter a number: ")
 
-    if user_input == 'l':
+    if user_input == 'h':
         break
 
     try:
@@ -18,7 +18,7 @@ while True:
         print("Invalid input, enter a valid number.")
     
 if numbers:
-    lowest_number = min(numbers)
-    print(f"The lowest number is: {lowest_number}")
+    highest_number = max(numbers)
+    print(f"The lowest number is: {highest_number}")
 else:
     print("No valid number")

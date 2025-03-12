@@ -10,16 +10,21 @@ print("Enter numbers (type 'exit' to stop):")
 
 while True:
     user_input = input("Enter a number: ")
-
     if user_input.lower() == 'exit':
         print("Exiting the program.")
         break
 
 #ask for user number input
-#check for duplicates in user input:
-    #print "duplicate"
-#check for unique numbers in user input:
-    #print "unique"
+
+try:
+        num = int(user_input)
+        if numbers.count(num) > 0:
+            print(f"{num} - Duplicate")
+        else:
+            print(f"{num} - Unique")
+
+            numbers.append(num)
+
 #check if the user input is invalid:
 #end
 

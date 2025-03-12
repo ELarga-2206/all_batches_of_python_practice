@@ -2,6 +2,8 @@
 
 numbers = []
 
+print("type 'l' to display the lowest number")
+
 while True:
     user_input = input("Enter a number: ")
 
@@ -20,5 +22,3 @@ if numbers:
     print(f"The lowest number is: {lowest_number}")
 else:
     print("No valid number")
-
-print("type 'l' to display the lowest number")

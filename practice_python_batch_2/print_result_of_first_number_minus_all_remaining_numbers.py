@@ -4,7 +4,6 @@ counter = 0
 
 for _ in range (10):
     num = int(input("Enter a number:"))
-    if num % 2 == 0:
-        counter -= num
+    counter -= num
         
 print(counter)

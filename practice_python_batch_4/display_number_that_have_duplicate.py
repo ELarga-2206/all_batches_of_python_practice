@@ -8,3 +8,6 @@ for i in range(1, 11):
 
 duplicates = set()
 
+for num in numbers:
+    if numbers.count(num) > 1:
+        duplicates.add(1)

@@ -11,3 +11,8 @@ duplicates = set()
 for num in numbers:
     if numbers.count(num) > 1:
         duplicates.add(1)
+
+if duplicates:
+    print("Duplicate numbers:")
+    for num in duplicates:
+        print(num)

@@ -19,11 +19,8 @@ while True:
 if numbers:
     most_duplicate_number = max(numbers, key=numbers.count)
     max_count = numbers.count(most_duplicate_number)
-    most_duplicate_number += 1
 
     if max_count > 1:
         print(f"number with most duplicates: {most_duplicate_number}")
-        else:
-        print("No duplicates")
-
-
+else:
+    print("No duplicates")

@@ -4,9 +4,9 @@ numbers = []
 
 for i in range(1,11):
     num = int(input("enter a number: "))
-    number.append(num)
+    numbers.append(num)
 
-
-#add test
-
-#add another
+print("No duplicates: ")
+for num in numbers:
+    if numbers.count(num) == 1:
+        print(num)

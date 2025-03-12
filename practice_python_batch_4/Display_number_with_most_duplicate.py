@@ -8,4 +8,12 @@ while True:
     user_input = input("Enter a number: ")
 
     if user_input == 'd':
-    break
+        break
+
+    try:
+        num = int(user_input)  
+        numbers.append(num)
+    except ValueError:
+        print("Invalid, enter a valid number.")
+
+

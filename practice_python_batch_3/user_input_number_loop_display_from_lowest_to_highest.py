@@ -1,24 +1,22 @@
 #Create a program that ask user to input a number, continue asking until the user input is invalid. Display the number from lowest to highest. Clue: sort() function
 
-#initialize list
-#user input
-#while loop
-#it must sort
-#no invalid inputs
+numbers = []
 
-print("Enter numbers (type 'exit' to stop):")
+print("Enter numbers: ")
+print("type 's' to sort numbers")
 
 while True:
-    user_input = int(input("Enter a number: "))
-    if user_input == "exit":
+    user_input = (input("Enter a number: "))
+    if user_input == "s":
         break
 
-try:
-    num = user_input = int #must be converted to integer
-#append function
-    numbers.append(num)
+    try:
+        num = int(user_input)
+        numbers.append(num)
 
-#how do we sort?
+    except ValueError:
+        print("Invalid input! Please enter a valid number.")
 
-
-
+numbers.sort()
+for number in numbers:
+    print(number)
